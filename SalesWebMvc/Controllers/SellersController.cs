@@ -20,5 +20,10 @@ namespace SalesWebMvc.Controllers
             var list = _sellersService.FindAll();
             return View(list);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
